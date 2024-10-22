@@ -8,7 +8,7 @@ public class MenuItem : BaseDomain
     public string Description { get; set; }
     public decimal Price { get; set; }
     public bool IsAvailable { get; set; } = true;
-    public int MenuCategoryId { get; set; }
+    public Guid MenuCategoryId { get; set; }
 
     public virtual MenuCategory MenuCategory { get; set; }
 }
